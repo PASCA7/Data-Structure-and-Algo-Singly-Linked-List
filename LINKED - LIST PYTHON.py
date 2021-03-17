@@ -85,6 +85,25 @@ class Linked_list:
             new_node = Node(data)
             new_node.next = n.next
             n.next = new_node
+          
+        
+    def delete(self,x):
+        if self.head is not None:
+            if self.head.element == x:
+                self.head = self.head.next
+                return
+        n = self.head
+        while (n is not None):
+            if n.element == x:
+                break
+            prev = n
+            n = n.next
+    
+        if n==None:
+            return
+        prev.next = n.next
+        temp= None          
+        
                 
                 
         
