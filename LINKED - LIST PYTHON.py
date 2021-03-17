@@ -102,7 +102,22 @@ class Linked_list:
         if n==None:
             return
         prev.next = n.next
-        temp= None          
+        temp= None  
+        
+        
+        
+    def count(self):
+        if self.head is None:
+            print("list has no elements")
+            return
+        n = self.head
+        count = 0
+        while n is not None:
+            if n == None:
+                return
+            n = n.next
+            count += 1
+        return count
         
                 
                 
